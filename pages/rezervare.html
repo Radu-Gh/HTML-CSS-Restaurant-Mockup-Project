@@ -1,0 +1,85 @@
+<link rel="stylesheet" type="text/css" href="../styles/rezervare.css">
+
+<div id="header"></div>
+
+<div class="container">
+
+    <div id="middle">
+
+        <h1>Luati un loc!</h1>
+
+        <form action="" id="rezervare">
+                
+            <div id="coloane">
+
+                <div id="left-col" class="col">
+                    
+                    <div class="formular">
+                        <label for="nume">Nume:</label>
+                        <input type="text" name="nume" id="nume" required placeholder="Nume">
+                    </div>
+                    
+                    <div class="formular">
+                        <label for="prenume">Prenume:</label>
+                        <input type="text" name="prenume" id="prenume" required placeholder="Prenume">
+                    </div>
+                    
+                    <div class="formular">
+                        <label for="email">Adresa de email:</label>
+                        <input type="email" name="email" id="email" required placeholder="exemplu@gmail.com">
+                    </div>
+                    
+                    <div class="formular">
+                        <label for="telefon">Numarul de telefon:</label>
+                        <input type="tel" name="telefon" id="telefon" required placeholder="07xxxxxxxx">
+                    </div>
+                </div>
+            
+                <div id="right-col" class="col">
+                    <div class="formular">
+                        <label for="data">Ziua rezervarii</label>
+                        <input type="date" name="data" id="data" required>
+                    </div>
+                
+                    <div class="formular">
+                        <label for="ora">Ora</label>
+                        <input type="time" name="ora" id="ora" required>
+                    </div>
+                
+                    <div class="formular">
+                        <label for="nr-persoane">Numarul de persoane</label>
+                        <input type="number" name="nr-persoane" id="nr-persoane" required value="1">
+                    </div>
+                
+                    <div class="formular">
+                        <label for="mesaj">Cerinte speciale</label>
+                        <textarea name="mesaj" id="mesaj" rows="4" cols="45"> </textarea>
+                    </div>
+
+                </div>
+            </div>
+
+            <div id="submit">
+                <input type="submit" value="Rezerva" id="submit-button">
+            </div>
+
+        </form>    
+
+    </div>
+
+</div>
+
+
+
+
+
+
+<div id="footer"></div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+    $(function() {
+        $("#header").load("header.html");
+        $("#footer").load("footer.html");
+    });
+</script>
